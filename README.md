@@ -29,10 +29,16 @@ If a browser isn't automatically opened, open your browser of choice and enter t
 http://localhost:3000
 ```
 
-This form, when submitted, will "populate" the server and return the info back to the user in the backend terminal! It also validates the email and phone number fields and won't reach the server if either field is invalid.
+This form, when submitted, will "populate" the server and return the info back to the user in the backend terminal! It also validates the email and phone number fields and won't post to the server if either field is invalid.
 
 The react frontend directory can be run as a container but, as of now, cannot connect to the proxy while containerized. It can, however, connect and run properly to the containerized backend when started locally with "npm start".
 
+### User Input
+5. Type in your info to the fields provided (NOTE: you MUST provide first and last names as well as a supervisor)
+6. Phone and email are optional, but the form will show an error if either of these receive input that is considered incorrect (e.g. phone number: "qwerty").  
 
+<br>
+
+And now you're done! Thank you for the opportunity to interview with you, I really appreciate it.
 
 
