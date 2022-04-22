@@ -1,5 +1,5 @@
 # LFChallenge
-This repo is for the LightFeather FullStack Assignment! It contains both the frontend (React) and the backend (Spring). The app validates and receives data from users which is then sent to the backend. Get started building the app by cloning this repo to your local machine.
+This repo is for the LightFeather FullStack Assignment! It contains both the frontend (React) and the backend (Spring). The app validates and receives data from users which is then sent to the backend. Get started with the app by cloning or downloading this repo to your local machine.
 
 
 
