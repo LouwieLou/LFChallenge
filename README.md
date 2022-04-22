@@ -39,6 +39,6 @@ The react frontend directory can be run as a container but, as of now, cannot co
 
 <br>
 
-And now you're done! Thank you for the opportunity to interview with you, I really appreciate it.
+And now you're done! Thank you for the opportunity to interview with you, I hope to speak with you soon.
 
 
