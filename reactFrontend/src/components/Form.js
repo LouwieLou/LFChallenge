@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const Form = () => {
   const [firstName, setFirstName] = useState('')
@@ -25,18 +26,26 @@ const Form = () => {
 
   const onFormSubmit = async (e) => {
     e.preventDefault()
-    
+
+    const regex = /^([+]?[\s0-9]+)?(\d{3}|[(]?[0-9]+[)])?([-]?[\s]?[0-9])+$/i;
+    if(!regex.test(phone)) {
+      toast.error('Please enter a valid phone number')
+      console.log(phone)
+    } else {
+
     const formBody = {
       firstName,
       lastName,
       email,
       phone,
       supervisor
-    }    
+    }
+  
 
     const response = await axios.post('/api/submit', formBody)
     const formData = response.data
     console.log(formData)
+  }
 
     setFirstName('')
     setLastName('')
@@ -73,9 +82,9 @@ const Form = () => {
         <label htmlFor="supervisor">Supervisor</label>
         <br />
         <select name="supervisor" id="supervisor" onChange={(e) => setSupervisor(e.target.value)}>
-          { supervisors.map((supervisor, index) => (
+          {supervisors.map((supervisor, index) => (
             <option key={index} value={supervisor}>{supervisor}</option>
-          )) }
+          ))}
         </select>
       </div>
       <button type="submit" >Submit</button>
