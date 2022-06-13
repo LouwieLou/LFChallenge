@@ -1,5 +1,5 @@
-# LFChallenge
-This repo is for the LightFeather FullStack Assignment! It contains both the frontend (React) and the backend (Spring). The app validates and receives data from users which is then sent to the backend. Get started with the app by cloning or downloading this repo to your local machine.
+# Notification System
+This repo contains both the frontend (React) and the backend (Spring). The app validates and receives data from users which is then sent to the backend. Get started with the app by cloning or downloading this repo to your local machine.
 
 
 
@@ -39,6 +39,6 @@ The react frontend directory can be run as a container but, as of now, cannot co
 
 <br>
 
-And now you're done! Thank you for the opportunity to interview with you, I hope to speak with you soon.
+And now you're done!
 
 
